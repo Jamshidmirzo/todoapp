@@ -10,7 +10,7 @@ Task _$TaskFromJson(Map<String, dynamic> json) => Task(
       title: json['title'] as String,
       date: json['date'] as String,
       id: json['id'] as String,
-      isDone: json['isDone'] as bool? ?? false,
+      isDone: json['isDone'] as bool,
     );
 
 Map<String, dynamic> _$TaskToJson(Task instance) => <String, dynamic>{

@@ -7,12 +7,14 @@ class Task {
   String id;
   String date;
   bool isDone;
-  Task(
-      {required this.title,
-      required this.date,
-      required this.id,
-      this.isDone = false});
+  Task({
+    required this.title,
+    required this.date,
+    required this.id,
+    this.isDone = false,
+  });
   factory Task.fromJson(Map<String, dynamic> json) {
+    print(json);
     return _$TaskFromJson(json);
   }
   Map<String, dynamic> toJson() {
